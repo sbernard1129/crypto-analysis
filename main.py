@@ -1,5 +1,9 @@
 import pandas as pd
 
+
+
+
+
 portfolio_dict={}  # this could be a dict or a list. 
 
 while True:
@@ -10,18 +14,27 @@ while True:
         if tickers == '':
             break
 
-        #do some data validation.       
-        #do something with the API here to get the data
+        #do some data validation.
+        #setup API
+        #get the data
+        
         #add the response data to the portfolio dictionary
         portfolio_dict[tickers] = "some api data"
+        
+        #Turn the dicct into a data frame so we can pass it to functions that do our plots and stuff.
+        portfolio_df = pd.DataFrame.from_dict(portfolio_dict, orient='index')
+
+        # show the data frame
+        print(f"\n\nYour portfolio:")
+        print(portfolio_df)
+        print()
 
     except:
         pass
 
-#Now turn the dicct into a data frame so we can pass it to functions that do our plots and stuff.
-portfolio_df = pd.DataFrame.from_dict(portfolio_dict, orient='index')
 
-# show the data frame
-print(f"This is the port: {portfolio_df}")
+
+
+
     
 
