@@ -24,17 +24,14 @@ Portfolio analysis of alternative assets using the S&P or various markets as a b
 * How is my crypto performing to different benchmarks (S&P/DOW)
 
 ### Possible Datasets to be used: 
-OnChain data API's 
-
-CoinGecko - API [API Docs](https://www.coingecko.com/api/documentations/v3)
-
-Coinbase - API 
-
-CoinMetrics API (Charts)
+* OnChain data API's 
+* CoinGecko - API [API Docs](https://www.coingecko.com/api/documentations/v3)
+* Coinbase - API 
+* CoinMetrics API (Charts)
 
 ### Rough breakdown of tasks:
-User input collection of crypto or equity market asset symbols
-Pull 5 years of data for user input
-Clean & sort data 
-Conduct analysis on user portfolio and create visualizations for all scenarios
-Create an interactive dashboard 
+1. User input collection of crypto or equity market asset symbols
+2. Pull 5 years of data for user input
+3. Clean & sort data 
+4. Conduct analysis on user portfolio and create visualizations for all scenarios
+5. Create an interactive dashboard 
